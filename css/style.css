@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body {
+  --key-color: #8e44ad;
+  --sub-color: #7e349d;
+  padding-top: 72px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 58px;
+  }
+}
+
+.btn-primary {
+  background-color: var(--key-color);
+  border: 1px solid var(--key-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--sub-color);
+  border: 1px solid var(--sub-color);
+}
+
+footer a {
+  color: var(--key-color);
+}
+
+footer a:hover {
+  color: var(--sub-color);
+}
+
+/*-------------------------
+  トップ
+-------------------------*/
+
+.topics p {
+  text-align: justify;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  /* 表示行数を指定する */
+}
